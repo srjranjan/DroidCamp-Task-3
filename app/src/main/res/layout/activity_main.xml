@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/txtdrawable"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="10dp"
+        android:textCursorDrawable="@color/cursorColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnAboutMe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_design"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="14dp"
+        android:paddingVertical="5dp"
+        android:text="About Me"
+        android:textAlignment="center"
+        android:textColor="@color/btnTextColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        tools:ignore="HardcodedText"
+        tools:layout_marginTop="10dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

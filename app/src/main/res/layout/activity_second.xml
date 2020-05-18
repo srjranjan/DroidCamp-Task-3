@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mi_band"
+        android:contentDescription="@string/image_description" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#0317F6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
+            android:forceDarkAllowed="false"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="This is Mi Band 4 developed by Xioami. The Mi Smart Band 4 sports a neat design and looks classy on the wrist. To me it does. In a way the Mi Smart Band 4 almost looks like the Mi Band 3 minus the curved screen. The Mi Band 3 includes a screen that is curvy on the sides, but the screen in the Mi Smart Band 4 isn't as curvy. It's not flat either like the screen in the Mi Band 2. The new Mi Smart Band 4 follows a middle ground and that offers good end-result. The Mi Band 4 can be controlled using the Mi Fit app. Xiaomi has added a few new features to the Mi Fit app, but overall the application remains unchanged. One of the most interesting features of the Mi Fit app according to me is the night mode which dims the display of the Band 4 automatically at sunset or during the scheduled duration.
+
+In my one week of using the Mi Band 4 I found that the Mi Band 4 manages to capture fairly accurate data as far as the sleep and activity tracking are concerned. In exercise mode, the Band 4 uses GPS data from the paired phone for better distance and heart rate tracking."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText" />
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/btn_design"
+        android:clickable="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="say hello"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/btnTextColor"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
